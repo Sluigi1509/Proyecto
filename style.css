@@ -1,0 +1,16 @@
+
+#buscar {
+  display: flex;
+   width: 350px;
+  flex-direction: row;
+  
+}
+
+.head {
+    display: flex;
+    justify-content: start;
+    height: 84px;
+    width: 84px;
+    background-color: #0080ff;
+    
+}
