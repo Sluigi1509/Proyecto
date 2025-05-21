@@ -61,3 +61,25 @@ button {
     color: rgb(255, 255, 255);
     font-size: 13px;
 } 
+
+#loqueseaid {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.musiquita {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    height: fit-content;
+    width: 250px;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+}
+
+.musiquita img {
+    max-width: 250px;
+    max-height: 250px;
+}
