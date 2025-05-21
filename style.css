@@ -1,16 +1,63 @@
-
-#buscar {
-  display: flex;
-   width: 350px;
-  flex-direction: row;
-  
-}
-
 .head {
     display: flex;
-    justify-content: start;
-    height: 84px;
-    width: 84px;
-    background-color: #0080ff;
+    justify-content: space-between;
+}
+
+#barra_buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
     
 }
+.buscar {
+    display: flex;
+  border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+.iniciar_sesion {
+    display: flex;
+    align-items: center;
+   background-color: rgb(255, 136, 0);
+   color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 13px;
+} 
+
+
+.reproductor {
+    position: fixed;
+    left: 29%;
+    bottom: 0;
+    width: 800px;
+    background: rgb(61, 61, 61); 
+    display: flex;
+   
+    align-items: center;
+    gap: 215px;
+    z-index: 100;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#home {
+    display: flex;
+   border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+} 
