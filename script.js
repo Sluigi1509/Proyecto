@@ -1,11 +1,11 @@
 const contenedorCanciones = document.getElementById('loqueseaid')
 
-function CrearHTMLCancion (loquesea) {
+function CrearHTMLCancion(loquesea) {
     const li = document.createElement('div')
-    li.addEventListener('click',function(){
-        document.getElementById('title').innerHTML=loquesea.title
-        document.getElementById('author').innerHTML=loquesea.author
-        document.getElementById('audio1').setAttribute("src",loquesea.audio.url)
+    li.addEventListener('click', function () {
+        document.getElementById('title').innerHTML = loquesea.title
+        document.getElementById('author').innerHTML = loquesea.author
+        document.getElementById('audio1').setAttribute("src", loquesea.audio.url)
     })
 
     li.setAttribute('class', 'musiquita')
@@ -15,15 +15,15 @@ function CrearHTMLCancion (loquesea) {
             <p>${loquesea.author}</p>
     `
     return li
-   
+
 }
 
 
 // Make a request for a user with a given ID
 axios.get('https://api.institutoalfa.org/api/songs')
-  .then(function (response) {
-    // handle success
-    response.data.songs.map(function (loquesea) {
-        contenedorCanciones.appendChild(CrearHTMLCancion(loquesea))
+    .then(function (response) {
+        // handle success
+        response.data.songs.map(function (loquesea) {
+            contenedorCanciones.appendChild(CrearHTMLCancion(loquesea))
+        })
     })
-  })
